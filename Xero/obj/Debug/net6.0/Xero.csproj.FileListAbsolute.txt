@@ -1,0 +1,15 @@
+H:\c#\Xero\Xero\bin\Debug\net6.0\Xero.exe
+H:\c#\Xero\Xero\bin\Debug\net6.0\Xero.deps.json
+H:\c#\Xero\Xero\bin\Debug\net6.0\Xero.runtimeconfig.json
+H:\c#\Xero\Xero\bin\Debug\net6.0\Xero.dll
+H:\c#\Xero\Xero\bin\Debug\net6.0\Xero.pdb
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.csproj.AssemblyReference.cache
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.GeneratedMSBuildEditorConfig.editorconfig
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.AssemblyInfoInputs.cache
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.AssemblyInfo.cs
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.csproj.CoreCompileInputs.cache
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.dll
+H:\c#\Xero\Xero\obj\Debug\net6.0\refint\Xero.dll
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.pdb
+H:\c#\Xero\Xero\obj\Debug\net6.0\Xero.genruntimeconfig.cache
+H:\c#\Xero\Xero\obj\Debug\net6.0\ref\Xero.dll
