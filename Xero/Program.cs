@@ -4,30 +4,35 @@
     {
         static void Main(string[] args)
         {
-          //Initialise calculator
-          var calculator = new TaxCalculator();
+            //Instances of invoices
+            Invoice invoiceNZ = new Invoice(3000, "NZ");
+            Invoice invoiceAU = new Invoice(3000, "AU");
+            Invoice invoiceCA = new Invoice(3000, "CA");
+            Invoice invoiceUK = new Invoice(3000, "UK");
+            Invoice invoiceSG = new Invoice(3000, "SG");
+            Invoice invoiceHK = new Invoice(3000, "HK");
 
-            //initialise invoices
-            Invoice invoiceNZ = new Invoice(2500, "NZ");
-            Invoice invoiceAU = new Invoice(2500, "AU");
-            Invoice invoiceCA = new Invoice(2500, "CA");
-            Invoice invoiceNZ2 = new Invoice(3000, "NZ");
-
-            //order list (of invoices)
+            //List of invoices (orders)
             List<Invoice> orders = new List<Invoice>();
             orders.Add(invoiceNZ);
             orders.Add(invoiceAU);
             orders.Add(invoiceCA);
-            orders.Add(invoiceNZ2);
+            orders.Add(invoiceUK);
+            orders.Add(invoiceSG);
+            orders.Add(invoiceHK);
 
-            Dictionary<TaxRate, decimal> result = calculator.CalculateGST(orders);
-            
-            /*foreach (KeyValuePair<TaxRate, decimal> item in result)
-            {
-                Console.WriteLine(item.Key.countryCode + " rate: " + item.Key.taxRate*100 + "%, "+ "Taxed Amount: " + item.Value);
-            }*/
-            
+            //Initialise calculator
+            var calculator = new TaxCalculator();
+            var result = calculator.CalculateGST(orders);
+ 
 
+
+
+
+            //Print result dictionary as String
+            Console.WriteLine(string.Join(Environment.NewLine, result));
+
+            Console.ReadLine();
         }
     }
 }
