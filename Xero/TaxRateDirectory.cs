@@ -23,17 +23,7 @@ namespace Xero
             };
         }
 
-        //method to visualise all Codes + Rates
-        public void getSavedCountriesAndRates()
-        {
-            foreach (KeyValuePair<string, decimal> pair in rates)
-            {
-                Console.WriteLine("Country Code (Key): " + pair.Key + ", GST rate: " + pair.Value);
-            }
-        }
-
-        //method to retrieve the rate using Code.
-        public decimal getRateWithCountryCode(String countryCode)
+        public decimal getRateWithCountryCode(String countryCode) //Method to get % with CountryCode
         {
             decimal value;
             if (rates.TryGetValue(countryCode, out value))

@@ -30,7 +30,7 @@
 
 
             //Print result dictionary as String
-            Console.WriteLine(string.Join(Environment.NewLine, result));
+            //Console.WriteLine(string.Join(Environment.NewLine, result));
 
             Console.ReadLine();
         }

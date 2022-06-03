@@ -11,21 +11,17 @@ namespace Xero
 
         public Dictionary<TaxRate, decimal> CalculateGST (List<Invoice> orders)
         {
-
             var result = new Dictionary<TaxRate, decimal>(); //dictionary to be returned
 
-            //calculate tax here
-            foreach (Invoice invoice in orders)
+            foreach (Invoice invoice in orders)  //calculator logic
             {
-                //calculate GST
-                decimal gst = invoice.Amount * (invoice.GetTaxRate/100);
+                decimal gst = invoice.Amount * (invoice.GetTaxRate/100); //Amount * Rate
 
-                //add to dictionary
-                result.Add(invoice.TaxRate, gst);
+                result.Add(invoice.TaxRate, gst); //Add to result dictionary
             }
 
-            //print results
-            foreach (KeyValuePair<TaxRate, decimal> item in result)
+           
+            foreach (KeyValuePair<TaxRate, decimal> item in result)  //print results
             {
                 Console.WriteLine(item.Key.CountryCode + " rate: " + item.Key.Percentage + "%, " + "Taxed Amount: " + item.Value);
             }
