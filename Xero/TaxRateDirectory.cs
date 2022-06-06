@@ -8,24 +8,24 @@ namespace Xero
 {
     public class TaxRateDirectory
     {
-        private Dictionary<string, decimal> rates;
+        private Dictionary<string, int> rates;
 
         public TaxRateDirectory()
         {
-            rates = new Dictionary<string, decimal>()
+            rates = new Dictionary<string, int>()
             {
-                {"NZ", 15m},
-                {"AU", 10m},
-                {"CA", 5m},
-                {"HK", 0m},
-                {"SG", 7m},
-                {"UK", 20m}
+                {"NZ", 15},
+                {"AU", 10},
+                {"CA", 5},
+                {"HK", 0},
+                {"SG", 7},
+                {"UK", 20}
             };
         }
 
-        public decimal getRateWithCountryCode(String countryCode) //Method to get % with CountryCode
+        public int getRateWithCountryCode(String countryCode) //Method to get % with CountryCode
         {
-            decimal value;
+            int value;
             if (rates.TryGetValue(countryCode, out value))
             {
                 return value;

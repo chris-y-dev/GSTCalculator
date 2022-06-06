@@ -26,9 +26,6 @@
             var result = calculator.CalculateGST(orders);
  
 
-
-
-
             //Print result dictionary as String
             //Console.WriteLine(string.Join(Environment.NewLine, result));
 

@@ -23,7 +23,7 @@ namespace Xero
            
             foreach (KeyValuePair<TaxRate, decimal> item in result)  //print results
             {
-                Console.WriteLine(item.Key.CountryCode + " rate: " + item.Key.Percentage + "%, " + "Taxed Amount: " + item.Value);
+                Console.WriteLine(item.Key.CountryCode + " rate: " + item.Key.Percentage + "%, " + "GST total: " + item.Value);
             }
 
             return result;
